@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouTubeのURL取得",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["dist/contentScript.js"]
+    }
+  ]
+}
