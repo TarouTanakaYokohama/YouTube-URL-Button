@@ -1,4 +1,4 @@
-function createURLButton(): HTMLElement {
+const createURLButton = (): HTMLElement => {
     const urlButton = document.createElement('button');
     urlButton.className = 'url-button';
     urlButton.style.cssText = `
@@ -32,7 +32,7 @@ function createURLButton(): HTMLElement {
     return urlButton;
 }
 
-function updateURL() {
+const updateURL = () => {
     const searchContainer = document.querySelector('#search-form');
     if (!searchContainer) return;
 
@@ -43,7 +43,7 @@ function updateURL() {
     }
 }
 
-async function checkURLChange() {
+const checkURLChange = async () => {
     let lastURL = window.location.href;
 
     while (true) {
