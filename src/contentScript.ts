@@ -2,13 +2,11 @@ function createURLButton(): HTMLElement {
     const urlButton = document.createElement('button');
     urlButton.className = 'url-button';
     urlButton.style.cssText = `
-        margin-right: 10px;
         font-size: 12px;
         color: #FFFFFF;
         background-color: #FF0000;
         border: none;
         border-radius: 50%;
-        padding: 10px;
         width: 40px;
         height: 40px;
         cursor: pointer;
